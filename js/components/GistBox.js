@@ -1,3 +1,6 @@
+import Gist from './Gist';
+import GistAddForm from './GistAddForm';
+
 var GistBox = React.createClass({
     getInitialState: function() {
         return {
@@ -32,4 +35,4 @@ var GistBox = React.createClass({
 
 });
 
-React.render(<GistBox />, document.querySelector('#app'));
+export default GistBox;
