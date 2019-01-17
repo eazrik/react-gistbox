@@ -1,9 +1,13 @@
 var TaskList = React.createClass({
 
     render: function() {
-        var displayTask = function(task) {
-            return <li>{task}</li>
-        };
+        //this is ECMA5
+        // var displayTask = function(task) {
+        //     return <li>{task}</li>
+        // };
+
+//this is ES6
+        var displayTask = (task) => <li>{task}</li>
 
         return (
             <ul>
